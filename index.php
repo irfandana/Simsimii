@@ -6,8 +6,8 @@ Modified by Ilyasa
 */
 require_once('./line_class.php');
 
-$channelAccessToken = 'YOUR-CHANNEL-ACCESS-TOKEN'; //Your Channel Access Token
-$channelSecret = 'YOUR-CHANNEL-SECRET';//Your Channel Secret
+$channelAccessToken = '4eaOPHlHhopXu+vYMB0ySqPHMmoJCOMHvLKiFOdAzFYrSKxB5nv48NoC1oaob7jBQ6AUYAGn96HL0coHQvy33+UdgJesEtfARaFMmsu4qC1zZ1qK2PgIqV4koKYK9SCbZY9WeKFt5cMTrSVpPOF4VQdB04t89/1O/w1cDnyilFU='; //Your Channel Access Token
+$channelSecret = 'b184fc15647755138d794a86e42ee5cd';//Your Channel Secret
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -34,7 +34,7 @@ if($message['type']=='sticker')
 }
 else
 $pesan=str_replace(" ", "%20", $pesan_datang);
-$key = 'YOUR-API-KEY-SIMSIMI'; //API SimSimi
+$key = 'a4f57b46-cfdb-435a-bd84-e9fd5766638b'; //API SimSimi
 $url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
 $json_data = file_get_contents($url);
 $url=json_decode($json_data,1);
